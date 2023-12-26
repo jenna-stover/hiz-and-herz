@@ -1,0 +1,116 @@
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #023fad, #7c1f93, #ff0075);
+    padding: 20px;
+}
+
+#main-content {
+    background-color: black;
+}
+
+#main-nav {
+    display: flex;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav li {
+    margin-right: 50px;
+}
+
+#logo-image {
+    width: 350px;
+    height: 300px;
+    
+}
+
+#logo-image:hover {
+    cursor: pointer;
+
+}
+
+#arrow {
+    width: 15px;
+    height: 15px;
+    transform: rotate(180deg);
+}
+
+/* Main Navigation */
+
+#main-nav ul {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+#main-nav li {
+    text-align: center;
+    list-style-type: none; 
+    position: relative; 
+    padding: 10px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#main-nav a:hover {
+    background-color: rgb(255, 255, 255, .20);
+    padding: 10px;
+}
+
+/* Sub Navigation */
+
+.sub-nav {
+    display: none !important;
+    position: absolute; top: 100%; right: 0;
+    list-style: none;
+}
+
+#main-nav #sub-nav-parent:hover .sub-nav {
+    display: block;
+}
+
+.sub-nav a {
+    padding: 10px;
+    color: black;
+    background-color: white;
+}
+
+
+
+
+/* Larger Resolutions */
+
+  /* @media (min-width: 900px) {
+    #main-nav ul, .flex-container {
+        display: flex;
+    }
+    #main-nav li, .column, .image{
+        flex: 1;
+    }
+    #hamburger {
+        display: none;
+    }
+    .hide-small {
+        display: block;
+    }
+} */
