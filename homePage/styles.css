@@ -42,7 +42,6 @@ body {
 }
 
 .sub-col1 {
-    border: 5px solid #103baa;
     background-color: #05153c;
     width: 75%;
     margin: 0 auto;
@@ -55,6 +54,15 @@ body {
 .sub-col2 {
     text-align: center;
 }
+
+/* #sub-col2-content{
+    background-color: white;
+    color: black;
+    width: 25%;
+    margin: 0 auto;
+} */
+
+
 
 #logo-image {
     width: 450px;
@@ -76,6 +84,21 @@ body {
     margin-right: 10px;
 }
 
+#main-footer {
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(to right, #023fad, #7c1f93, #ff0075);
+    color: black;
+}
+
+#phone-number {
+    text-decoration: none;
+    color: white;
+}
+
+#phone-number:hover {
+    color:rgb(198, 198, 198);
+}
 
 /* Main Navigation */
 
@@ -96,22 +119,28 @@ body {
     color: black;
     text-transform: uppercase;
     position: relative;
-    padding: 10px 40px;
+    padding: 5px 30px;
     margin: auto;
     display: block;
 }
 
 #main-nav a:hover {
     background-color: rgb(255, 255, 255, .20);
-    padding: 10px 50px;
+    padding: 5px 40px;
 }
+
 
 #main-nav .sub-nav{
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    padding: 10px 50px;
+    padding: 5px 40px;
     margin-bottom: 10px;
+}
+
+#main-nav .sub-nav:hover{
+    background-color:rgb(255, 255, 255, .20);
+    padding: 5px 40px;
 }
 
 /* Hide the submenu */

@@ -60,12 +60,12 @@ body {
 
 /*Photo Gallery */
 
-.ear-gallery-imgs{
+.body-gallery-imgs{
     width: 200px;
     height: 225px;
 }
 
-.ear-gallery {
+.body-gallery {
     margin: 10px;
     border: 5px solid #023fad;
     border-radius: 5px;
@@ -160,7 +160,7 @@ td {
     .gallery {
         flex-wrap: wrap;
     }
-    #main-nav li, .column, #ears-table, .ears-gallery-imgs{
+    #main-nav li, .column, #face-table, .face-gallery-imgs{
         flex: 1;
     }
 }

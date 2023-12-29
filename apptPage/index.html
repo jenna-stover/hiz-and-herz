@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hiz and Herz</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="appointment.js"></script>
+    </head>
+
+    <body>
+        <div id="content">
+        <header id="main-header">
+            <div style="text-align:center;">
+                <a href="#">
+                    <img id="logo-image" src="../images/hiz-and-herz-logo.png" alt="">
+                </a>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../homePage/index.html">Home</a></li>
+                    <li><a href="#">Pricing</a>
+                        <ul>
+                            <li><a class="sub-nav" href="../faceSubPg/index.html">Face</a></li>
+                            <li><a class="sub-nav" href="../earsSubPg/index.html">Ears</a></li>
+                            <li><a class="sub-nav" href="../bodySubPg/index.html">Body</a></li>
+                            <li><a class="sub-nav" href="../oralSubPg/index.html">Oral</a></li>
+                            <li><a class="sub-nav" href="../genSubPg/index.html">Genital</a></li>
+                            <li><a class="sub-nav" href="../otherSubPg/index.html">Other</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="../contactPage/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <div class="flex-container">
+                <section class="col1 column">
+                    <div class="flex-container">
+                        <section class="sub-col1 column">
+                            <h2>Request an Appointment</h2>
+                            <h4>Or call us at: <br><a id="phone-number" href="tel:+18038344491">(803) 834-4491</a></h3>
+                            <form id="appointment-form" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="3adb68e7-0c88-4e36-b7a8-0de8eda71880">
+                                <p class="form columns">
+                                    <label for="name">Name:</label>
+                                    <input id="name" type="text" placeholder="first and last" name="name" required>
+                                </p>
+                                <p class="form columns">
+                                    <label for="email">Email: </label>
+                                    <input id="email" type="email" name="email" required> 
+                                </p>
+                                <p class="form columns">
+                                    <label for="message">Preferred Date and Time: </label>
+                                    <input id="datetime" type="datetime-local" name="datetime" required>
+                                </p>
+
+                                <input type="hidden" name="redirect" value="http://web3forms.com/success"/>
+                                <input type="hidden" name="subject" value="Contact from Hiz and Herz's Website">
+                                <input type="hidden" name="from_name" value="Hiz and Herz Website">
+                                
+                                <p class="form columns">
+                                    <button type="submit">Submit Request</button>
+                                </p>
+                                <p id="result"></p>
+                            </form>
+                        </section>
+            </div>
+        </main>
+        <footer id="main-footer"><p>&copy; HizandHerz.com</p></footer>
+        </div>
+    </body>
+</html>
+
